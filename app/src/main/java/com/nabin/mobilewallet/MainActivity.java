@@ -21,11 +21,26 @@ private TextView name , location;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        name =findViewById(R.id.Name);
-        location= findViewById(R.id.Location);
+            name =findViewById(R.id.Name);
+            location= findViewById(R.id.Location);
 
         recyclerview = findViewById(R.id.recyclerview);
         List<moodel> moodelList = new ArrayList<>();
+        moodelList.add(new moodel("nabin","thimi"));
+        moodelList.add(new moodel("mohan","balkumari"));
+        moodelList.add(new moodel("ramu","kathmandu"));
+        moodelList.add(new moodel("prabin","chapagaon"));
+        moodelList.add(new moodel("munna","bhaktapur"));
+        moodelList.add(new moodel("nabin","thimi"));
+        moodelList.add(new moodel("mohan","balkumari"));
+        moodelList.add(new moodel("ramu","kathmandu"));
+        moodelList.add(new moodel("prabin","chapagaon"));
+        moodelList.add(new moodel("munna","bhaktapur"));
+        moodelList.add(new moodel("nabin","thimi"));
+        moodelList.add(new moodel("mohan","balkumari"));
+        moodelList.add(new moodel("ramu","kathmandu"));
+        moodelList.add(new moodel("prabin","chapagaon"));
+        moodelList.add(new moodel("munna","bhaktapur"));
         moodelList.add(new moodel("nabin","thimi"));
         moodelList.add(new moodel("mohan","balkumari"));
         moodelList.add(new moodel("ramu","kathmandu"));

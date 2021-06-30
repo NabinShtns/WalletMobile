@@ -31,7 +31,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_main,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.contact_view,parent,false);
         return new ViewHolder(view);
 
     }
@@ -39,8 +39,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
        moodel moodel = moodellist.get(position);
-       holder.tvname.setText(moodel.getName());
-       holder.tvlocation.setText(moodel.getLocation());
+       holder.tvname.setText(moodel.getTvname());
+       holder.tvlocation.setText(moodel.getTvlocation());
 
     }
 

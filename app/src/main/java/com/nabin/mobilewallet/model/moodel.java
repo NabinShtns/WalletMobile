@@ -1,27 +1,27 @@
 package com.nabin.mobilewallet.model;
 
 public class moodel {
-    private String name;
-    private String location;
+    private String tvname;
+    private String tvlocation;
 
-    public moodel(String name, String location) {
-        this.name = name;
-        this.location = location;
+    public moodel(String tvname, String tvlocation) {
+        this.tvname = tvname;
+        this.tvlocation = tvlocation;
     }
 
-    public String getName() {
-        return name;
+    public String getTvname() {
+        return tvname;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTvname(String tvname) {
+        this.tvname = tvname;
     }
 
-    public String getLocation() {
-        return location;
+    public String getTvlocation() {
+        return tvlocation;
     }
 
-    public void setLocation(String location) {
-        this.location = location;
+    public void setTvlocation(String tvlocation) {
+        this.tvlocation = tvlocation;
     }
 }
