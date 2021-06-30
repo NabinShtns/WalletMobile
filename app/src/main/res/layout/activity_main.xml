@@ -216,8 +216,8 @@
 
             <LinearLayout
                 android:id="@+id/LL3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
                 <ImageView
                     android:id="@+id/IV4"
@@ -247,53 +247,52 @@
 
 
     <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         >
 
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/MV3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="20dp"
-            app:cardBackgroundColor="#979090"
-            app:cardCornerRadius="10dp">
 
-            <LinearLayout
-                android:background="@color/white"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_toEndOf="@+id/IV2"
-                android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/TV5"
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:paddingStart="10dp"
-                    android:layout_marginStart="5dp"
-                    android:text="midtown_health_center"
-                    android:layout_weight="1"
-                    android:textSize="20dp" />
+                    android:layout_toEndOf="@+id/IV2"/>
 
-                <TextView
-                    android:id="@+id/TV6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingStart="10dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_weight="1"
-                    android:text="Thimi"
-                    android:textSize="15dp" />
-            </LinearLayout>
-        </com.google.android.material.card.MaterialCardView>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+
+                        <TextView
+                            android:id="@+id/Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:paddingStart="10dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_weight="1"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/Location"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="10dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_weight="1"
+                            android:textSize="15dp" />
+
 
 
     </LinearLayout>
+
 
 
 
