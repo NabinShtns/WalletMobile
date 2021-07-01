@@ -42,7 +42,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
             app:cardBackgroundColor="@color/white"
             app:cardCornerRadius="10dp">
 
@@ -72,7 +72,7 @@
                         android:layout_marginTop="20dp"
                         android:paddingStart="10dp"
                         android:paddingEnd="25dp"
-                        android:text="income"
+                        android:text="@string/income"
                         android:textAlignment="center"
                         android:textSize="20dp"
 
@@ -86,7 +86,7 @@
                         android:layout_marginStart="5dp"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp"
-                        android:text="$200"
+                        android:text="@string/_200"
                         android:textSize="20dp" />
 
 
