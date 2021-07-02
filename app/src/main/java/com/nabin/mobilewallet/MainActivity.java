@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -27,6 +29,16 @@ private TextView name , location;
 
             name =findViewById(R.id.Name);
             location= findViewById(R.id.Location);
+
+            ImageButton button = (ImageButton)findViewById(R.id.btnnext);
+
+            button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+//                    Intent intent = new Intent(MainActivity.this, secondScreen.class);
+//                    startActivity(intent);
+                }
+            });
 
 
         recyclerview = findViewById(R.id.recyclerview);
