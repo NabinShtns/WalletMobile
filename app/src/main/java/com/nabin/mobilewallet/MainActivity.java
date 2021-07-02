@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.nabin.mobilewallet.MyAdapter.MyAdapter;
@@ -20,7 +21,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 private RecyclerView recyclerview;
 private TextView name , location;
-private Button button;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +29,8 @@ private Button button;
 
             name =findViewById(R.id.Name);
             location= findViewById(R.id.Location);
-            button = findViewById(R.id.btntest);
+
+            ImageButton button = (ImageButton)findViewById(R.id.btnnext);
 
             button.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -37,6 +39,7 @@ private Button button;
                     startActivity(intent);
                 }
             });
+
 
         recyclerview = findViewById(R.id.recyclerview);
         List<moodel> moodelList = new ArrayList<>();

@@ -20,19 +20,59 @@
         app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="20dp">
 
-        <Button
-            android:id="@+id/btntest"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Next screen"
-            />
+            android:orientation="vertical">
 
-<!--        <ImageView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="300dp"-->
-<!--            android:layout_marginStart="20dp"-->
-<!--            android:layout_marginEnd="20dp"-->
-<!--            android:src="@color/black" />-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/calander" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:text="1-30 Sept"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <ImageButton
+                    android:id="@+id/btnnext"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginEnd="20dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/chart" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:contentDescription="image"
+                android:src="@drawable/imagefirstscreen" />
+
+
+        </LinearLayout>
+
+
+        <!--        <ImageView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="300dp"-->
+        <!--            android:layout_marginStart="20dp"-->
+        <!--            android:layout_marginEnd="20dp"-->
+        <!--            android:src="@color/black" />-->
 
     </com.google.android.material.card.MaterialCardView>
 
@@ -59,7 +99,7 @@
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
-
+                    android:backgroundTint="@color/white"
                     android:src="@drawable/uparrow" />
 
                 <LinearLayout
@@ -110,6 +150,7 @@
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
+                    android:backgroundTint="@color/white"
                     android:src="@drawable/uparrow" />
 
                 <LinearLayout
@@ -149,98 +190,102 @@
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        >
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:padding="5dp"
             android:orientation="horizontal">
 
-            <ImageView
-                android:id="@+id/shopping"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/shopping" />
 
             <Button
                 android:id="@+id/btnshopping"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button"
+                android:backgroundTint="@color/white"
+                android:drawableStart="@drawable/pleasure"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
                 android:text="Shopping"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textColor="@color/black" />
 
-            <ImageView
-                android:id="@+id/pleasure"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginStart="4dp"
-                android:src="@drawable/shopping" />
 
             <Button
                 android:id="@+id/btnpleasure"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/pleasure"
-                android:textAlignment="center" />
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/button"
+                android:backgroundTint="@color/white"
+                android:drawableStart="@drawable/pleasure"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="pleasure"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
 
-            <ImageView
-                android:id="@+id/sports"
-
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginStart="4dp"
-                android:src="@drawable/shopping" />
 
             <Button
                 android:id="@+id/btnsports"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:text="Shopping"
-                android:textAlignment="center" />
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/button"
+                android:backgroundTint="@color/white"
+                android:drawableStart="@drawable/pleasure"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="hello"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
 
-            <ImageView
-                android:id="@+id/school"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginStart="4dp"
-                android:src="@drawable/shopping" />
 
             <Button
                 android:id="@+id/btnschool"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Shopping"
-                android:textAlignment="center" />
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/button"
+                android:backgroundTint="@color/white"
+                android:drawableStart="@drawable/pleasure"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="School"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
         </LinearLayout>
 
 
     </HorizontalScrollView>
 
 
-<!--    <com.google.android.material.card.MaterialCardView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginStart="20dp"-->
-<!--        android:layout_marginEnd="20dp"-->
-<!--        app:cardBackgroundColor="#F7EDFD"-->
-<!--        app:cardCornerRadius="10dp">-->
+    <!--    <com.google.android.material.card.MaterialCardView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="20dp"-->
+    <!--        android:layout_marginEnd="20dp"-->
+    <!--        app:cardBackgroundColor="#F7EDFD"-->
+    <!--        app:cardCornerRadius="10dp">-->
 
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerview"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:textColor="@color/black" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:paddingTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/white"
+        android:textColor="@color/black" />
 
 
-<!--    </com.google.android.material.card.MaterialCardView>-->
+    <!--    </com.google.android.material.card.MaterialCardView>-->
 
 
 </LinearLayout>
