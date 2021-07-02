@@ -5,6 +5,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.nabin.mobilewallet.MyAdapter.MyAdapter;
@@ -15,7 +17,9 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 private RecyclerView recyclerview;
+ private Button button;
 private TextView name , location;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +27,7 @@ private TextView name , location;
 
             name =findViewById(R.id.Name);
             location= findViewById(R.id.Location);
+
 
         recyclerview = findViewById(R.id.recyclerview);
         List<moodel> moodelList = new ArrayList<>();
